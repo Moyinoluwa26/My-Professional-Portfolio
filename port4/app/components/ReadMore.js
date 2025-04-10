@@ -9,7 +9,7 @@ const ReadMoreText = ({ text, maxChars = 300 }) => {
 
     return (
         <div>
-            <p>{displayText}</p>
+            <h1>{displayText}</h1>
             {text.length > maxChars && (
                 <button onClick={toggleText} className="text-blue-500 hover:underline mt-2">
                     {expanded ? 'Read Less' : 'Read More'}

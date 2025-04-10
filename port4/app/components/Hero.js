@@ -19,16 +19,20 @@ export default function Hero() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <section className="bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white py-20 px-6">
-                <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+            <section className="bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white py-20 px-6 " id="home" >
+                <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10 md:w-3/5">
 
                     {/* Text Content */}
-                    <div className="md:w-1/2 space-y-6">
-                        <p className="text-blue-400 uppercase text-sm">Welcome To My Portfolio</p>
-                        <h1 className="text-4xl md:text-5xl font-bold">
-                            Hi, I am <span className="text-blue-500">Oyejide Moyinoluwa</span><br />
-                            Web Developer
+                    <div className="md:w-1/2 space-y-6 flex flex-col md:my-24 leading-none">
+                        <p className="text-blue-400 uppercase text-xs mb-[5]">Welcome To My Portfolio</p>
+                        <h1 className="text-3xl md:text-4xl font-bold mb-[5] ">
+                            Hi, I am <span className="text-blue-400">Oyejide </span> Moyinoluwa
+
                         </h1>
+
+                        <h2 className='text-3xl '>
+                            Web Developer
+                        </h2>
                         <p className="text-gray-300 max-w-md">
                             I specialize in creating modern, responsive web applications. Always learning, always building.
                         </p>

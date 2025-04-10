@@ -33,7 +33,7 @@ const services = [
 
 export default function Services() {
     return (
-        <section className="bg-[#0f172a] text-white py-16 px-6  ">
+        <section className="bg-[#0f172a] text-white py-16 px-6  " id="services">
             <div className="container mx-auto text-center md:w-3/5">
                 <h2 className="text-3xl font-bold mb-10">What I Do</h2>
                 <div className="grid md:grid-cols-2 sm:grid-cols-2 gap-6">
