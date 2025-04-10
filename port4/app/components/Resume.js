@@ -9,17 +9,23 @@ import Java from './logos/JavaScript-logo.png';
 import Node from './logos/Node.js.png';
 import ReactIm from './logos/React.png';
 import Expr from './logos/Express.png';
+/*import Native from './logos/Native.png';
+import Nextt from './logos/Nextt.png';
+import Tailwind from './logos/Tailwind.png';*/
 
-const tabs = ['Biography', 'Skills', 'Education', 'Experience'];
+const tabs = ['Biography', 'Skills', 'Education'];
 
 const Exp = [
     { id: 1, src: Html, style: "shadow-orange-500", title: "HTML" },
     { id: 2, src: Css, style: "shadow-blue-500", title: "CSS" },
     { id: 3, src: Java, style: "shadow-yellow-500", title: "Javascript (ES6+)" },
     { id: 4, src: Node, style: "shadow-green-400", title: "Node.js" },
-    { id: 5, src: ReactIm, style: "shadow-blue-600", title: "React" },
+    { id: 5, src: ReactIm, style: "shadow-blue-500", title: "React" },
     { id: 6, src: Expr, style: "shadow-purple-500", title: "Express.js" },
-
+    /* { id: 7, src: Native, style: "shadow-purple-500", title: "Express.js" },
+     { id: 8, src: Nextt, style: "shadow-black", title: "Next.js" },
+     { id: 9, src: Tailwind, style: "shadow-purple-500", title: "Express.js" },
+ */
 
 ]
 
@@ -73,7 +79,7 @@ export default function Resume() {
         <section className="bg-[#1e293b] py-16 px-6 text-white" id="resume">
             <div className="container mx-auto md:w-3/5">
                 <h2 className="text-3xl font-bold mb-8 text-center">My Resume</h2>
-                <div className="flex justify-center mb-6 gap-4 flex-wrap">
+                <div className="flex justify-center md:-mb-9 mb-6  rounded-xl  md:p-3 md:max-w-lg  mx-auto gap-4 flex-wrap">
                     {tabs.map((tab) => (
                         <button
                             key={tab}
@@ -85,7 +91,7 @@ export default function Resume() {
                         </button>
                     ))}
                 </div>
-                <div className="bg-[#0f172a] p-6 rounded-xl shadow">{content[activeTab]}</div>
+                <div className="bg-[#0f172a]  pt-12 px-6 pb-6 rounded-xl shadow">{content[activeTab]}</div>
             </div>
         </section>
     )

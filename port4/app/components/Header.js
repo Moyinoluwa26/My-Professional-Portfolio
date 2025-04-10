@@ -44,13 +44,13 @@ export default function Header() {
 
             {/* Mobile Menu Dropdown */}
             {menuOpen && (
-                <div className="md:hidden px-6 pb-4 bg-[#1e293b]">
+                <div className="md:hidden px-6 pb-4 bg-[#0f172a]">
                     <nav className="flex flex-col gap-4">
                         {navLinks.map((link) => (
                             <a
                                 key={link.label}
                                 href={link.href}
-                                className="text-white hover:text-blue-400 transition"
+                                className="text-white hover:text-blue-400 transition "
                                 onClick={() => setMenuOpen(false)}
                             >
                                 {link.label}

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Linkedin, Github, Mail } from 'lucide-react';
 import Head from 'next/head';
+import Image from 'next/image';
+import Moyin from './logos/Moyinn.png'
 
 export default function Hero() {
     return (
@@ -49,10 +51,10 @@ export default function Hero() {
 
                     {/* Image */}
                     <div className="md:w-1/2">
-                        <img
-                            src="/profile.png"
+                        <Image
+                            src={Moyin}
                             alt="Profile"
-                            className="w-full max-w-sm rounded-xl shadow-lg ring-4 ring-blue-500/30"
+                            className="w-full h-full mx-auto max-w-sm  object-cover"
                         />
                     </div>
                 </div>
@@ -60,3 +62,7 @@ export default function Hero() {
         </div>
     );
 }
+
+
+
+/*\ "" shadow-lg ring-4 ring-blue-500/30"*/
