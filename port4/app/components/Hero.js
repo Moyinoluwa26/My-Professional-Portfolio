@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Moyin from './logos/Moyinn.png'
 
+
 export default function Hero() {
     return (
         <div>
@@ -40,11 +41,12 @@ export default function Hero() {
                         </p>
 
                         <div className="flex items-center gap-4">
-                            <a href="#" className="bg-blue-600 px-5 py-2 rounded-lg text-white hover:bg-blue-700 transition">More About Me</a>
+                            <a href='./Resume.pdf' className="bg-blue-600 px-5 py-2 rounded-lg text-white hover:bg-blue-700 transition">My Resume</a>
                             <div className="flex gap-3">
-                                <a href="#"><Linkedin className="hover:text-blue-400" /></a>
-                                <a href="#"><Github className="hover:text-blue-400" /></a>
-                                <a href="#"><Mail className="hover:text-blue-400" /></a>
+                                <a href="https://linkedin.com/in/oyejide-moyinoluwa"><Linkedin className="hover:text-blue-400" /></a>
+                                <a href="https://github.com/Moyinoluwa26"><Github className="hover:text-blue-400" /></a>
+                                <a href="mailto:themoyinguy@gmail.com"><Mail className="hover:text-blue-400" /></a>
+
                             </div>
                         </div>
                     </div>

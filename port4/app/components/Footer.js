@@ -12,10 +12,10 @@ export default function Footer() {
                     <a href="https://github.com/Moyinoluwa26" target="_blank" rel="noreferrer">
                         <Github className="hover:text-white transition" />
                     </a>
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">
+                    <a href="https://linkedin.com/in/oyejide-moyinoluwa" target="_blank" rel="noreferrer">
                         <Linkedin className="hover:text-white transition" />
                     </a>
-                    <a href="mailto:youremail@example.com">
+                    <a href="mailto:themoyinguy@gmail.com">
                         <Mail className="hover:text-white transition" />
                     </a>
                 </div>

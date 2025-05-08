@@ -15,6 +15,9 @@ import Mongo from './logos/Mogodb.png';
 /*import Native from './logos/Native.png';
 import Nextt from './logos/Nextt.png';
 import Tailwind from './logos/Tailwind.png';*/
+import Resp from './images/Moyin-Back.png';
+import Back from './images/Moyin-Back-ENd.png';
+import Edu from './images/education.jpg';
 
 const tabs = ['Biography', 'Tools', 'Education'];
 
@@ -34,6 +37,37 @@ const Exp = [
      { id: 9, src: Tailwind, style: "shadow-purple-500", title: "Express.js" },
  */
 
+]
+
+const Educationdata = [
+    {
+        id: 1,
+        title: 'B.Sc. Accounting',
+        institution: 'Obafemi Awolowo University',
+        date: '2019 – Present',
+        description:
+            'A comprehensive program focused on financial reporting, cost analysis, auditing, and corporate finance. My coursework has emphasized strong analytical thinking, regulatory compliance, and financial decision-making. I’ve also explored the intersection of finance and technology, particularly fintech trends, preparing me for roles that demand both traditional accounting expertise and modern digital fluency.',
+        imag: null,
+    },
+    {
+        id: 2,
+        title: 'Responsive Web Design',
+        institution: 'freeCodeCamp',
+        date: '2022',
+        description: 'Completed over 300 hours of hands-on projects in HTML, CSS, and Flexbox. Built mobile-first, accessible websites with clean layouts, semantic tags, and responsive grids. This certification sharpened my front-end design principles and taught me how to implement UI components that adapt flawlessly to different screen sizes.',
+        link: "https://www.freecodecamp.org/certification/fcc51ebb6b0-1227-4147-a073-99ec2f01afbd/responsive-web-design",
+        imag: Resp
+    },
+    {
+        id: 3,
+        title: 'Backend Development and APIs',
+        institution: 'freeCodeCamp',
+        date: '2024',
+        description:
+            'Gained solid experience building RESTful APIs using Node.js, Express, and MongoDB. Designed and secured authentication flows with JWT, handled CRUD operations, and connected backend logic to frontend apps. This certification strengthened my understanding of server-client communication and scalable backend development best practices.',
+        link: "https://www.freecodecamp.org/certification/fcc51ebb6b0-1227-4147-a073-99ec2f01afbd/back-end-development-and-apis",
+        imag: Back
+    },
 ]
 
 const content = {
@@ -64,9 +98,22 @@ I’m driven by a passion for learning and a mindset geared toward solving real-
         </div>
     ),
     Education: (
-        <div>
-            <p className="text-blue-400 font-semibold">Obafemi Awolowo University</p>
-            <p className="text-gray-300 text-sm">B.Sc in Accounting (In Progress)</p>
+        <div className="flex  flex-col justify-between  ">
+            {Educationdata.map(({ id, title, institution, date, description, link, imag }) => {
+                return (
+                    <div key={id} className='xl:h-54 md:my-12 my-5 xl:mx-9  flex flex-col xl:flex-row xl:justify-between '>
+
+                        <div className='xl:w-1/2 w-full '>
+                            <h3 className="text-xl font-semibold">{title}</h3>
+                            <h6 className="text-sm  text-blue-300">{institution} — {date}</h6>
+                            <p className="mt-2 text-gray-300">{description}</p>
+                        </div>
+                        <a href={link}>
+                            {id !== 1 && <Image src={imag} alt={title} className="w-80 mt-5 mx-auto object-contain" />}
+                        </a>
+                    </div>
+                )
+            })}
         </div>
     ),
     Experience: (

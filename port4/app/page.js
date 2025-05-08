@@ -15,8 +15,8 @@ export default function Home() {
 
 
 
-      <div className="fixed md:top-120 bottom-40 left-10 text-[8rem] font-bold text-white/5 select-none pointer-events-none">
-        <span className="animate-pulse">Moyinoluwa</span>
+      <div className="fixed md:top-120 bottom-60 left-10 md:text-[8rem] text-[4rem] font-bold text-white/5 select-none pointer-events-none">
+        <span className="animate-[ping_5s_linear_infinite]">Moyinoluwa</span>
       </div>
 
 
@@ -27,7 +27,7 @@ export default function Home() {
 
       <Resume />
 
-      <Portfolio />
+      {/*<Portfolio />*/}
       <div className="h-1 w-full bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-full "></div>
       <Contact />
       <div className="h-1 w-full bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-full "></div>
