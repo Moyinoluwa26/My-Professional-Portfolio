@@ -28,7 +28,7 @@ export default function Portfolio() {
     return (
         <section className="bg-[#0f172a] py-16 px-6 text-white" id="portfolio">
             <div className="container mx-auto max-w-6xl text-center">
-                <h2 className="text-3xl font-bold mb-10">Portfolio</h2>
+                <h2 className="text-3xl font-bold mb-10">Portfolio Projects</h2>
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {projects.map((project, idx) => (
                         <a

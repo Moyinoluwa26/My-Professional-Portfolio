@@ -22,10 +22,10 @@ export default function Hero() {
             </Head>
 
             <section className="bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white py-20 px-6 " id="home" >
-                <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10 md:w-3/5">
+                <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-10 md:w-3/5">
 
                     {/* Text Content */}
-                    <div className="md:w-1/2 space-y-6 flex flex-col md:my-24 leading-none">
+                    <div className="lg:w-1/2 space-y-6 flex flex-col md:my-24 leading-none">
                         <p className="text-blue-400 uppercase text-xs mb-[5]">Welcome To My Portfolio</p>
                         <h1 className="text-3xl md:text-4xl font-bold mb-[5] ">
                             Hi, I am <span className="text-blue-400">Oyejide </span> Moyinoluwa
@@ -35,7 +35,7 @@ export default function Hero() {
                         <h2 className='text-3xl '>
                             Web Developer
                         </h2>
-                        <p className="text-gray-300 max-w-md">
+                        <p className="text-gray-300 max-w-md text-primary">
                             I specialize in creating modern, responsive web applications. Always learning, always building.
                         </p>
 
@@ -50,12 +50,29 @@ export default function Hero() {
                     </div>
 
                     {/* Image */}
-                    <div className="md:w-1/2">
-                        <Image
+                    <div className="md:w-1/2 my-15">
+                        {/*<Image
                             src={Moyin}
                             alt="Profile"
-                            className="w-full h-full mx-auto max-w-sm  object-cover"
-                        />
+                            className="w-full h-full mx-auto max-w-sm  object-cover {/*animate-ping"
+                        />*/}
+                        <div className=" flex justify-center items-center ">
+                            <div className=" ">
+                                <div className="flex w-[300px] h-[300px] justify-center items-center relative bg-black rounded-full ">
+                                    <Image
+                                        src={Moyin}
+                                        alt="Profile"
+                                        className=" h-full w-full object-cover rounded-full"
+                                    />
+                                    <div className="w-[110%] h-[110%] shadow-lg shadow-pink-500 bg-transparent rounded-full absolute animate-[spin_3s_linear_infinite]  "></div>
+                                    <div className="w-[108%] h-[108%] shadow-lg shadow-violet-500 bg-transparent rounded-full absolute rotate-90 animate-[spin_3s_linear_infinite] scale-x-[-1]  "></div>
+                                    <div className="w-[106%] h-[106%] shadow-lg shadow-cyan-500 bg-transparent rounded-full absolute rotate-180 "></div>
+                                    <div className="w-[106%] h-[106%] shadow-lg shadow-cyan-500 bg-transparent rounded-full absolute animate-[ping_5s_linear_infinite]"></div>
+                                </div>
+                            </div>
+
+
+                        </div>
                     </div>
                 </div>
             </section>

@@ -18,7 +18,7 @@ export default function Header() {
     return (
         <header className="fixed w-full z-50 bg-[#0f172a] shadow-md">
             <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-                <h1 className="text-xl font-bold text-blue-400">YourName</h1>
+                <h1 className="text-xl font-bold text-blue-400">Moyin</h1>
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex gap-6">
