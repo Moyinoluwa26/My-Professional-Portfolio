@@ -45,7 +45,9 @@ export default function Hero() {
                             <div className="flex gap-3">
                                 <a href="https://linkedin.com/in/oyejide-moyinoluwa"><Linkedin className="hover:text-blue-400" /></a>
                                 <a href="https://github.com/Moyinoluwa26"><Github className="hover:text-blue-400" /></a>
-                                <a href="mailto:themoyinguy@gmail.com"><Mail className="hover:text-blue-400" /></a>
+                                <a href="mailto:themoyinguy@gmail.com" aria-label="Send Email">
+                                    <Mail className="hover:text-blue-400 transition-colors duration-200" />
+                                </a>
 
                             </div>
                         </div>
