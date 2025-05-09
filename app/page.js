@@ -9,7 +9,7 @@ import "./globals.css";
 
 export default function Home() {
   return (
-    <div className="max-w-screen ">
+    <div className="max-w-screen fixed ">
 
 
 
