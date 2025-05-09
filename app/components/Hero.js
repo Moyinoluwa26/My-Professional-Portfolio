@@ -2,7 +2,7 @@ import React from 'react';
 import { Linkedin, Github, Mail } from 'lucide-react';
 import Head from 'next/head';
 import Image from 'next/image';
-import Moyin from './logos/Moyinn.png'
+import Moyin from './logos/Moyinn.png';
 
 
 export default function Hero() {
@@ -13,13 +13,13 @@ export default function Hero() {
                 <meta name="description" content="Hi, I'm Oyejide Moyinoluwa, a web developer specializing in modern, responsive web applications. Always learning, always building." />
                 <meta property="og:title" content="Oyejide Moyinoluwa | Web Developer Portfolio" />
                 <meta property="og:description" content="Hi, I'm Oyejide Moyinoluwa, a web developer specializing in modern, responsive web applications. Always learning, always building." />
-                <meta property="og:image" content="/profile.png" />
-                <meta property="og:url" content="https://yourwebsite.com" />
+                <meta property="og:image" content={Moyin} />
+                <meta property="og:url" content="https://moyinoluwaresume.vercel.app/" />
                 <meta name="twitter:title" content="Oyejide Moyinoluwa | Web Developer Portfolio" />
                 <meta name="twitter:description" content="Hi, I'm Oyejide Moyinoluwa, a web developer specializing in modern, responsive web applications." />
                 <meta name="twitter:image" content="/profile.png" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <link rel="icon" href="/favicon.ico" />
+
             </Head>
 
             <section className="bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white py-20 px-6 " id="home" >
