@@ -27,7 +27,7 @@ export default function Hero() {
 
                     {/* Text Content */}
                     <div className="lg:w-1/2 space-y-6 flex flex-col md:my-24 leading-none">
-
+                        <p className="text-blue-400 uppercase text-xs mb-[5]">Welcome To My Portfolio</p>
                         <h1 className="text-3xl md:text-4xl font-bold mb-[5] ">
                             Hi, I am <span className="text-blue-400">Oyejide </span> Moyinoluwa
 

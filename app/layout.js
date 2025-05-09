@@ -44,7 +44,7 @@ export const metadata = {
     siteName: "Oyejide Moyinoluwa Portfolio",
     images: [
       {
-        url: 'https://moyinoluwaresume.vercel.app/components/logos/Mosco.jpg',
+        url: 'https://moyinoluwaresume.vercel.app/Mosco.jpg',
         width: 1200,
         height: 630,
         alt: "Preview of Oyejide Moyinoluwa's Portfolio",
@@ -57,8 +57,8 @@ export const metadata = {
     card: "summary_large_image",
     title: "Oyejide Moyinoluwa – Frontend Developer Portfolio",
     description:
-      "Browse the portfolio of a frontend developer skilled in React, Next.js, and React-Nativey.",
-    images: "https://moyinoluwaresume.vercel.app/components/logos/Mosco.jpg",
+      "Browse the portfolio of a frontend developer skilled in React, Next.js, and React-Native .",
+    images: "https://moyinoluwaresume.vercel.app/Mosco.jpg",
     creator: "@Moyinol89289566",
   },
 };

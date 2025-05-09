@@ -1,7 +1,7 @@
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Resume from "./components/Resume";
-import Portfolio from "./components/Portfolio";
+/*import Portfolio from "./components/Portfolio";*/
 import Contact from "./components/Contact";
 import "./globals.css";
 
