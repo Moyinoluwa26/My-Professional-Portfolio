@@ -9,14 +9,14 @@ import "./globals.css";
 
 export default function Home() {
   return (
-    <div className="max-w-screen fixed ">
+    <div className="max-w-screen overflow-x-hidden ">
 
 
 
 
 
-      <div className="fixed md:top-120 bottom-60 left-10 md:text-[8rem] text-[4rem] font-bold text-white/5 select-none pointer-events-none">
-        <span className="animate-[ping_5s_linear_infinite]">Moyinoluwa</span>
+      <div className="fixed md:top-120 bottom-60 left-10 md:text-[8rem] text-[4rem] font-bold text-white/5 select-none pointer-events-none ">
+        <span className="animate-[ping_5s_linear_infinite] ">Moyinoluwa</span>
       </div>
 
 
