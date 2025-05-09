@@ -58,7 +58,7 @@ export const metadata = {
     title: "Oyejide Moyinoluwa – Frontend Developer Portfolio",
     description:
       "Browse the portfolio of a frontend developer skilled in React, Next.js, and React-Native .",
-    images: "https://moyinoluwaresume.vercel.app/Mosco.jpg",
+    images: ["https://moyinoluwaresume.vercel.app/Mosco.jpg"],
     creator: "@Moyinol89289566",
   },
 };
